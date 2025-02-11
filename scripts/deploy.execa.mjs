@@ -26,6 +26,9 @@ window.ExtLocations = [
 `
 fs.writeFileSync(path.join(cwd, 'tagspaces', 'web/extconfig.js'), extconfig)
 
+if (process.env.baseDir)
+  shell.sed('-i', `s#../dist/#../${process.env.baseDir + '/'}dist/#`, path.join(cwd, 'tagspaces/.erb/configs/webpack.config.web.prod.ts'))
+
 $$`npm run prepare-web`
 
 const dist = path.join(cwd, `dist/${process.env.baseDir || ''}`)
