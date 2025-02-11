@@ -30,4 +30,4 @@ $$`npm run prepare-web`
 
 const dist = path.join(cwd, `dist/${process.env.baseDir || ''}`)
 shell.mkdir('-p', dist)
-shell.cp('-r', path.join(cwd, 'tagspaces/web'), dist)
+shell.cp('-r', path.join(cwd, 'tagspaces/web/*'), dist)
