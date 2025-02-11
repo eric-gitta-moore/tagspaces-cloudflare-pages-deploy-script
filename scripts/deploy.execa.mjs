@@ -19,7 +19,7 @@ window.ExtCheckForUpdatesOnStartup = false;
 window.ExtSaveLocationsInBrowser = true;
 window.ExtUseSidecarsForFileTagging = true;
 window.ExtLocations = [
-    ${process.env.ExtLocations}
+    ${process.env.ExtLocations || ''}
   ]
 `
 
