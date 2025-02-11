@@ -14,6 +14,9 @@ importers:
       execa:
         specifier: ^9.5.2
         version: 9.5.2
+      shelljs:
+        specifier: ^0.8.5
+        version: 0.8.5
       shx:
         specifier: ^0.3.4
         version: 0.3.4
