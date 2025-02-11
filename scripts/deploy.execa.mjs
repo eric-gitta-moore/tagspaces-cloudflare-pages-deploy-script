@@ -26,4 +26,4 @@ window.ExtLocations = [
 fs.writeFileSync(path.join(cwd, 'tagspaces', 'web/extconfig.js'), extconfig)
 
 $$`npm run prepare-web`
-$$`cp web ../dist`
+$$`cp web ../dist/${process.env.baseDir || ''}`
