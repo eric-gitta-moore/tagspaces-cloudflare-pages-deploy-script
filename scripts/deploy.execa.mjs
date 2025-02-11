@@ -28,4 +28,6 @@ fs.writeFileSync(path.join(cwd, 'tagspaces', 'web/extconfig.js'), extconfig)
 
 $$`npm run prepare-web`
 
-shell.cp('-r', path.join(cwd, 'tagspaces/web'), path.join(cwd, `dist/${process.env.baseDir || ''}`))
+const dist = path.join(cwd, `dist/${process.env.baseDir || ''}`)
+shell.mkdir('-p', dist)
+shell.cp('-r', path.join(cwd, 'tagspaces/web'), dist)
