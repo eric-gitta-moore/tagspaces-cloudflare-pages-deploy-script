@@ -9,7 +9,7 @@ const cwd = process.cwd()
 const $$ = $.sync
 $.verbose = true
 
-$$`git clone git@github.com:eric-gitta-moore/tagspaces.git -b develop`
+$$`git clone https://github.com/eric-gitta-moore/tagspaces.git -b develop`
 zx.cd('tagspaces')
 $$`npm ci`
 
