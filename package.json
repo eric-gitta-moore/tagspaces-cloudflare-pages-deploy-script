@@ -4,14 +4,14 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node scripts/deploy.mjs"
+    "build": "node scripts/deploy.execa.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rebundled/execa": "8.0.2-next.2",
     "@types/node": "^22.13.1",
+    "execa": "^9.5.2",
     "shx": "^0.3.4",
     "zx": "^8.3.2"
   }
